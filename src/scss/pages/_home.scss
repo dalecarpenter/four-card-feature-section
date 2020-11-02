@@ -1,0 +1,34 @@
+.section {
+  &__text-box {
+    margin: 8.5rem auto 7.6rem;
+    width: 82.93333333333334%;
+  }
+
+  &__title {
+    font-weight: 200;
+    margin-bottom: 0.1rem;
+  }
+
+  &__info {
+    margin: 1.6rem auto 0;
+    max-width: 54rem;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 7.8rem;
+  width: 82.93333333333334%;
+  max-width: 111rem;
+}
+
+.center-column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 46.7rem;
+  margin: 2.4rem auto;
+}

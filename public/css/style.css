@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #fafafa; }
+
+body {
+  font: 1.5rem/2.5rem "Poppins", sans-serif;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  color: #a3a5ae; }
+
+.heading {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.0166667rem;
+  color: #4c4e61; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 2.7rem 2.8rem 2.8rem;
+  max-width: 35rem;
+  height: 22.2rem;
+  text-align: left;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5); }
+  .card__title {
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0;
+    margin-bottom: 0.1rem; }
+  .card__copy {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.009rem;
+    margin-bottom: 3.3rem; }
+  .card__img {
+    display: block;
+    width: 5.4rem;
+    align-self: flex-end; }
+  .card--cyan {
+    background-image: linear-gradient(#45d3d3 0.355rem, #ffffff 0.355rem); }
+  .card--red {
+    background-image: linear-gradient(#ea5353 0.355rem, #ffffff 0.355rem); }
+  .card--orange {
+    background-image: linear-gradient(#fcaf4a 0.355rem, #ffffff 0.355rem); }
+  .card--blue {
+    background-image: linear-gradient(#549ef2 0.355rem, #ffffff 0.355rem); }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center; }
+
+.attribution a {
+  color: #549ef2; }
+
+.section__text-box {
+  margin: 8.5rem auto 7.6rem;
+  width: 82.93333333333334%; }
+
+.section__title {
+  font-weight: 200;
+  margin-bottom: 0.1rem; }
+
+.section__info {
+  margin: 1.6rem auto 0;
+  max-width: 54rem; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 7.8rem;
+  width: 82.93333333333334%;
+  max-width: 111rem; }
+
+.center-column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 46.7rem;
+  margin: 2.4rem auto; }
