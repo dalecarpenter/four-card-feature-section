@@ -1,34 +1,52 @@
 .section {
   &__text-box {
     margin: 8.5rem auto 7.6rem;
-    width: 82.93333333333334%;
+    width: 82.933vw;
+    max-width: 54rem;
+
+    @include respond(bp-large) {
+      margin: 8rem auto 6.4rem;
+    }
   }
 
   &__title {
     font-weight: 200;
     margin-bottom: 0.1rem;
+
+    @include respond(bp-large) {
+      margin-bottom: none;
+    }
   }
 
   &__info {
-    margin: 1.6rem auto 0;
-    max-width: 54rem;
+    margin-top: 1.6rem;
   }
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 7.8rem;
-  width: 82.93333333333334%;
-  max-width: 111rem;
-}
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    'cyan-card'
+    'red-card'
+    'orange-card'
+    'blue-card';
+  gap: 2.4rem 0;
 
-.center-column {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 46.7rem;
-  margin: 2.4rem auto;
+  @include respond(bp-large) {
+    grid-template-areas:
+      '. red-card .'
+      'cyan-card red-card blue-card'
+      'cyan-card orange-card blue-card'
+      '. orange-card .';
+    gap: 3rem;
+  }
+
+  margin: 0 auto 5.32rem;
+
+  @include respond(bp-large) {
+    margin-bottom: 5.52rem;
+  }
+  width: 82.933vw;
+  max-width: 111rem;
 }
